@@ -3,12 +3,12 @@ layout: default
 ---
 
 <h3><center>{{ page.title }} | {{ page.media}} | {{ page.dimensions}}</center></h3>
-<img class="page-image" src="{{page.image}}">
+<img class="page-image" src="{{site.baseurl}}/{{page.image}}">
 
 <ul id="carousel" class="list-carousel">
     {% for painting in site.paintings %}
         {% if painting.group == page.group %}
-            <li><a href="/paintings/{{ page.group | downcase }}/{{ painting.title }}.html"><img src="{{ painting.image }}" width="50"></a></li>
+            <li><a href="{{site.baseurl}}/paintings/{{ page.group | downcase }}/{{ painting.title }}.html"><img src="{{site.baseurl}}/{{ painting.image }}" width="50"></a></li>
         {% endif %}
     {% endfor %}
 </ul>
