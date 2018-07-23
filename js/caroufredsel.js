@@ -2736,7 +2736,7 @@
 		'classnames'	: {}
 	};
 	$.fn.carouFredSel.pageAnchorBuilder = function(nr) {
-		return '<a href="#"><span>'+nr+'</span></a>';
+		return '<a href="#"><span> '+nr+' </span></a>';
 	};
 	$.fn.carouFredSel.progressbarUpdater = function(perc) {
 		$(this).css('width', perc+'%');

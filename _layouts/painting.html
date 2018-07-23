@@ -12,10 +12,17 @@ layout: default
         {% endif %}
     {% endfor %}
 </ul>
-<a id="prev2" class="prev" href="#">Previous</a>
-<a id="next2" class="next" href="#">Next</a>
-<div id="pager2" class="pager"></div>
-
+<div class="row">
+    <div class="four columns" style="text-align: left;">
+        <a id="prev" class="prev carousel-link" href="#">Previous</a>
+    </div>
+    <div class="four columns" style="text-align: center;">
+        <span class="carousel-link">Pages</span> <span id="pager" class="pager carousel-link"></span>
+    </div>
+    <div class="four columns" style="text-align: right;">
+        <a id="next" class="next carousel-link" href="#">Next</a>
+    </div>
+</div>
 
 <script type="text/javascript">
 $(document).ready(function() {
@@ -23,9 +30,9 @@ $(document).ready(function() {
 
     $('#carousel').carouFredSel({
         auto: false,
-        prev: '#prev2',
-        next: '#next2',
-        pagination: "#pager2",
+        prev: '#prev',
+        next: '#next',
+        pagination: "#pager",
         mousewheel: true,
         swipe: {
             onMouse: true,
