@@ -5,4 +5,10 @@ location: Middlesex University
 showdate: September 2017
 ---
 
-<img src="https://github.com/Hiauk/jeremy-site/blob/master/images/gallery-0.jpg?raw=true" class="full-width">
+<img src="/images/installations/mashow/gallery-0.jpg" class="full-width">
+
+<img src="/images/installations/mashow/gallery-1.jpg" class="full-width">
+
+<img src="/images/installations/mashow/gallery-2.jpg" class="full-width">
+ 
+<img src="/images/installations/mashow/gallery-3.jpg" class="full-width">
