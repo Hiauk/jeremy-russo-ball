@@ -8,7 +8,7 @@ layout: default
 <ul id="carousel" class="list-carousel">
     {% for painting in site.paintings %}
         {% if painting.group == page.group %}
-            <li><a href="{{site.baseurl}}/paintings/{{ page.group | downcase }}/{{ painting.title }}.html"><img src="{{ painting.image }}" width="50"></a></li>
+            <li><a href="{{site.baseurl}}/paintings/{{ page.group | downcase | replace: " ", "" }}/{{ painting.title }}.html"><img src="{{ painting.image }}" width="50"></a></li>
         {% endif %}
     {% endfor %}
 </ul>
