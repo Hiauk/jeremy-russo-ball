@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+# About me
+
 <img src="{{site.baseurl}}/images/about/jeremy-russo-ball.jpg" class="full-width">
 
 My painting methodology provokes interactions between a surface and applications of paint or ink.
