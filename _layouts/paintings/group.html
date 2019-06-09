@@ -1,0 +1,22 @@
+---
+layout: base
+---
+
+<nav class="breadcrumb">
+    <a data-kube="offcanvas" data-target="#box">{% include icons/menu.html %}</a>
+    <a href="/">home</a>
+    <a href="/paintings/">paintings</a>
+    <span>{{ page.title | downcase }}</span>
+</nav>
+
+<h1>{{ page.title }}</h1>
+{% assign sorted-paintings = site.paintings | where: "group", page.title %}
+<div class="is-row">
+    {% for painting in sorted-paintings %}
+    <div class="is-col is-20">
+        <a href="{{ painting.url }}">
+            <div class="painting-preview-image" style="background-image: url('{{ painting.image }}');"></div>
+        </a>
+    </div>
+    {% endfor %}
+</div>

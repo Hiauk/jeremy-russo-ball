@@ -1,0 +1,25 @@
+---
+layout: base
+---
+
+<nav class="breadcrumb">
+    <a data-kube="offcanvas" data-target="#box">{% include icons/menu.html %}</a>
+    <a href="/">home</a>
+    <span>paintings</span>
+</nav>
+
+{% assign types = "Acrylic|acrylic|16, Canvas|canvas|57, Linen|linen|56, MDF|mdf|01, Mirrored HIPs|mirroredhips|104, Modelboard|modelboard|21, Paper|paper|10, Plywood|plywood|60, Ricepaper|ricepaper|12" | split: ", " %}
+
+<div class="is-row">
+    {% for type in types %}
+    {% assign group = type | split: "|" %}
+    <div class="is-col is-30">
+        <div class="painting-preview">
+            <a href="/paintings/{{ group[1] }}">
+                <h2>{{ group[0] }}</h2>
+                <img src="/images/paintings/{{ group[1] }}/JRB Web {{ group[2]}}-min.jpg">
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>

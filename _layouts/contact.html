@@ -1,16 +1,19 @@
 ---
 layout: default
 ---
-
+<nav class="breadcrumb">
+    <a data-kube="offcanvas" data-target="#box">{% include icons/menu.html %}</a>
+    <a href="/">home</a>
+    <span>contact</span>
+</nav>
 <h1>Contact me</h1>
 
-<form action="https://formspree.io/jeremyrussoball@outlook.com"
-method="POST">
-<label for="name">Name</label>
-<input type="text" name="name">
-<label for="email">Email</label>
-<input type="email" name="_replyto">
-<label for="message" name="message">Message</label>
-<textarea name="message" rows="10"></textarea>
-<input type="submit" value="Send">
-</form> 
+<form action="https://formspree.io/jeremyrussoball@outlook.com" method="POST">
+    <label for="name">Name</label>
+    <input type="text" name="name">
+    <label for="email">Email</label>
+    <input type="email" name="_replyto">
+    <label for="message" name="message">Message</label>
+    <textarea name="message" rows="10"></textarea>
+    <input type="submit" value="Send">
+</form>

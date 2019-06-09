@@ -1,0 +1,143 @@
+---
+---
+
+$header-font: 'Rubik', sans-serif
+$body-font: 'IBM Plex Sans', sans-serif
+
+body
+    font-family: $body-font
+    background-color: #333
+    color: #fff
+    font-weight: 300
+
+a
+    text-decoration: none
+    color: #fff
+    &:hover
+        color: #ee2455
+        transition: color .3s
+
+.container
+    font-weight: 100
+    position: relative
+    width: 100%
+    max-width: 1440px
+    margin: 0 auto
+    padding: 0 20px
+    box-sizing: border-box 
+
+.container:after
+    content: ""
+    display: table
+    clear: both
+
+@media (min-width: 768px)
+    .container
+        width: 80%
+
+.is-offcanvas
+    position: fixed !important
+    height: 100vh !important
+    overflow: scroll
+    background-color: #ffffff !important
+    color: #333333 !important
+    ul
+        list-style: none
+    a
+        color: #333333
+        text-decoration: none
+    li
+        font-size: 1.6em
+
+.breadcrumb
+    margin-top: 1em
+    margin-bottom: 1em
+    a, span, a:after
+        color: #fff !important
+    a
+        cursor: pointer
+        &:hover
+            color: #ee2455 !important
+            transition: color .3s
+            text-decoration: none
+
+h1
+    font-family: $header-font
+
+.is-unstyled
+    li
+        a
+            text-decoration: none
+            color: #ffffff
+            &:hover
+                color: #ee2455
+                transition: color .3s
+
+.painting-preview
+    margin-bottom: 2em
+    a
+        text-decoration: none
+        &:hover
+            img
+                filter: grayscale(100%)
+                transition: filter 1s
+                padding: .5em
+                transition: padding .5s
+    img
+        max-height: 400px
+
+.page-image
+    display: block
+    max-height: 90vh
+    margin: 0 auto
+
+.painting-information
+    .is-large
+        font-weight: 300
+        font-family: $body-font
+        letter-spacing: .1em
+    a
+        text-decoration: none
+
+.painting-preview-image
+    background-size: cover
+    background-position: center
+    height: 200px
+    min-width: 100%
+    margin-bottom: 1em
+    &:hover
+        filter: grayscale(100%)
+        border: 5px solid #333
+        transition: filter 1s
+        transition: border .5s
+
+.painting-preview-image.active
+    border: 10px solid #333
+    filter: grayscale(80%)
+
+.installation-preview
+    max-height: 400px
+    display: block
+    margin: 1em auto
+    &:hover
+        filter: grayscale(100%)
+        border: 5px solid #333
+        transition: filter 1s
+        transition: border .5s
+
+.installation-image
+    display: block
+    margin: 5em auto
+    border: 15px solid #ccc
+
+form
+    label
+        color: #fff
+        font-size: 1.6em
+        margin-top: .3em
+        margin-bottom: .5em
+    input
+        margin-top: 1em
+
+
+

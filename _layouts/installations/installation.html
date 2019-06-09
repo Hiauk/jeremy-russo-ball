@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<nav class="breadcrumb">
+    <a data-kube="offcanvas" data-target="#box">{% include icons/menu.html %}</a>
+    <a href="/">home</a>
+    <a href="/installations">installations</a>
+    <span>{{ page.title }}</span>
+</nav>
+<h1>{{ page.title }} {{ page.location }} {{ page.showdate }}</h1>
+
+{{ content }}

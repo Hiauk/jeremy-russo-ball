@@ -1,0 +1,20 @@
+---
+layout: base
+---
+<nav class="breadcrumb">
+    <a data-kube="offcanvas" data-target="#box">{% include icons/menu.html %}</a>
+    <a href="/">home</a>
+    <span>installations</span>
+</nav>
+<h1>Installations</h1>
+
+<div class="is-row">
+    {% for installation in site.installations %}
+    <div class="is-col">
+        <a href="{{ installation.url }}">
+            <h2>{{ installation.title }} - {{ installation.location }} {{ installation.showdate }}</h2>
+            <img class="installation-preview" src="{{ installation.thumbnail }}">
+        </a>
+    </div>
+    {% endfor %}
+</div>
