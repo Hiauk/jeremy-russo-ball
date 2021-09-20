@@ -1,4 +1,4 @@
 ---
 layout: contact
-url: /contact/
+url: /contact
 ---
